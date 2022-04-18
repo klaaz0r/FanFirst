@@ -49,7 +49,7 @@ export default function Header() {
           </div>
 
           <div className="flex md:-my-px md:ml-6 md:space-x-8">
-            <Link href="/create-podcast">
+            <Link href="https://fanfirst.typeform.com/to/wXGIkF3D">
               <a className="group relative  inline-flex">
                 <div className="transitiona-all animate-tilt absolute -inset-px rounded-full bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] opacity-50 blur-lg duration-1000 group-hover:-inset-1 group-hover:opacity-100 group-hover:duration-200"></div>
 

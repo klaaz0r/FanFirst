@@ -295,13 +295,13 @@ export default function HomePage() {
                     Event {"&"} community marketplace for web3.0
                   </h1>
                   <p className="font-inter mt-2 text-xl text-white sm:mt-6">
-                    FanFirst unlocks communities and events for the met averse
+                    FanFirst unlocks communities and events for the metaverse
                     and beyond, handle sales and access management at a large
-                    scale without high minting fees
+                    scale without high minting fees.
                   </p>
 
                   <div className="mx-auto mt-6 mb-6">
-                    <Link href="/create-podcast">
+                    <Link href="https://fanfirst.typeform.com/to/wXGIkF3D">
                       <a className="group relative inline-flex">
                         <div className="transitiona-all animate-tilt absolute -inset-px rounded-full bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] opacity-50 blur-lg duration-1000 group-hover:-inset-1 group-hover:opacity-100 group-hover:duration-200"></div>
 
@@ -868,7 +868,7 @@ export default function HomePage() {
               </div>
               <div className="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
                 <div className="mt-0 flex ">
-                  <Link href="/create-podcast">
+                  <Link href="https://fanfirst.typeform.com/to/wXGIkF3D">
                     <a className="group relative  inline-flex w-full">
                       <div className="transitiona-all animate-tilt absolute -inset-px w-full rounded-full bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] opacity-50 blur-lg duration-1000 group-hover:-inset-1 group-hover:opacity-100 group-hover:duration-200"></div>
 

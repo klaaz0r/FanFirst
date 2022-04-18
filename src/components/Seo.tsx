@@ -5,16 +5,15 @@ import { openGraph } from "@/lib/helper";
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: "Next.js + Tailwind CSS + TypeScript Starter",
-  siteName: "Next.js + Tailwind CSS + TypeScript Starter",
-  description:
-    "A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky",
+  title: "FanFirst - Membership and community marketplace for web3.0",
+  siteName: "FanFirst - Membership and community marketplace for web3.0",
+  description: "Sell membership and tickets on chain and unlock web3.0",
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: "https://tsnext-tw.thcl.dev",
+  url: "https://fanfirst.io",
   type: "website",
   robots: "follow, index",
   /** No need to be filled, will be populated with openGraph function */
-  image: "",
+  image: "https://fanfirst.io/images/meta.png",
 };
 
 type SeoProps = {
@@ -34,11 +33,11 @@ export default function Seo(props: SeoProps) {
 
   // Use siteName if there is templateTitle
   // but show full title if there is none
-  meta["image"] = openGraph({
-    description: meta.description,
-    siteName: props.templateTitle ? meta.siteName : meta.title,
-    templateTitle: props.templateTitle,
-  });
+  // meta["image"] = openGraph({
+  //   description: meta.description,
+  //   siteName: props.templateTitle ? meta.siteName : meta.title,
+  //   templateTitle: props.templateTitle,
+  // });
 
   return (
     <Head>
@@ -83,11 +82,26 @@ export default function Seo(props: SeoProps) {
       {favicons.map((linkProps) => (
         <link key={linkProps.href} {...linkProps} />
       ))}
-      <meta name="msapplication-TileColor" content="#212126" />
-      <meta
-        name="msapplication-TileImage"
-        content="/favicon/ms-icon-144x144.png"
+      <link
+        rel="apple-touch-icon"
+        sizes="120x120"
+        href="/apple-touch-icon.png"
       />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
+      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#212126" />
+      <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#212126" />
 
       <meta
