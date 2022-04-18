@@ -9,16 +9,19 @@ import { RiDiscordFill } from "react-icons/ri";
 const communities = [
   {
     name: "Twitter",
+    link: "https://twitter.com/FanFirstDAO",
     description: "Stay up to date with the latest news.",
     icon: ImTwitter,
   },
   {
     name: "Telegram",
+    link: "https://t.me/+OU_q8BS_Mg04MDc0",
     description: "News and chat about upcoming events and memberships.",
     icon: ImTelegram,
   },
   {
     name: "Discord",
+    link: "https://discord.gg/A2kUtuBW8K",
     description:
       "Join the conversation on Discord and help shape the future of events.",
     icon: RiDiscordFill,
@@ -834,20 +837,25 @@ export default function HomePage() {
               </div>
               <dl className="mt-10 space-y-10 sm:grid sm:grid-cols-3 sm:gap-x-8 sm:gap-y-10 sm:space-y-0 lg:col-span-2 lg:mt-0 lg:pl-6">
                 {communities.map((feature) => (
-                  <div key={feature.name} className="cursor-pointer">
-                    <dt>
-                      <div className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-500 bg-gray-600 text-white shadow-lg">
-                        <feature.icon className="h-6 w-6" aria-hidden="true" />
-                      </div>
-                      <p className="mt-5 flex items-center text-xl font-medium leading-6 text-white">
-                        {feature.name}{" "}
-                        <ArrowRightIcon className="ml-2 h-4 w-4" />
-                      </p>
-                    </dt>
-                    <dd className="mt-2 text-base text-gray-50">
-                      {feature.description}
-                    </dd>
-                  </div>
+                  <a href={feature.link}>
+                    <div key={feature.name} className="cursor-pointer">
+                      <dt>
+                        <div className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-500 bg-gray-600 text-white shadow-lg">
+                          <feature.icon
+                            className="h-6 w-6"
+                            aria-hidden="true"
+                          />
+                        </div>
+                        <p className="mt-5 flex items-center text-xl font-medium leading-6 text-white underline">
+                          {feature.name}{" "}
+                          <ArrowRightIcon className="ml-2 h-4 w-4" />
+                        </p>
+                      </dt>
+                      <dd className="mt-2 text-base text-gray-50">
+                        {feature.description}
+                      </dd>
+                    </div>
+                  </a>
                 ))}
               </dl>
             </div>
@@ -862,8 +870,8 @@ export default function HomePage() {
                   Early access and token presale
                 </h2>
                 <p className="mt-4 max-w-3xl text-lg text-gray-800">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui Lorem cupidatat commodo. Elit sunt amet fugiat.
+                  For more information, integrations and access to the token
+                  presale.
                 </p>
               </div>
               <div className="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
