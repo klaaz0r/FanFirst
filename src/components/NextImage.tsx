@@ -1,11 +1,11 @@
-import Image, { ImageLoaderProps, ImageProps } from 'next/image';
-import * as React from 'react';
+import Image, { ImageLoaderProps, ImageProps } from "next/image";
+import * as React from "react";
 
-import clsxm from '@/lib/clsxm';
+import clsxm from "@/lib/clsxm";
 
 type NextImageProps = (
   | { width: string | number; height: string | number }
-  | { layout: 'fill'; width?: string | number; height?: string | number }
+  | { layout: "fill"; width?: string | number; height?: string | number }
 ) &
   ImageProps;
 
@@ -21,14 +21,14 @@ export default function NextImage({
   return (
     <div className={clsxm(className)}>
       <Image
-        className='transition-all duration-200'
+        className="object-cover transition-all duration-200"
         src={src}
         width={width}
         height={height}
         layout={layout}
         alt={alt}
         loader={customLoader}
-        placeholder='blur'
+        placeholder="blur"
         blurDataURL={`data:image/svg+xml;base64,${toBase64(
           shimmer(width ? +width : 700, height ? +height : 475)
         )}`}
@@ -58,6 +58,6 @@ const shimmer = (w: number, h: number) => `
 </svg>`;
 
 const toBase64 = (str: string) =>
-  typeof window === 'undefined'
-    ? Buffer.from(str).toString('base64')
+  typeof window === "undefined"
+    ? Buffer.from(str).toString("base64")
     : window.btoa(str);
