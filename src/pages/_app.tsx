@@ -1,16 +1,27 @@
 import { AppProps } from "next/app";
 
 import "@/styles/globals.css";
-// // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
-// import "@/styles/colors.css";
-
-/**
- * !STARTERCONF info
- * ? `Layout` component is called in every page using `np` snippets. If you have consistent layout across all page, you can add it here too
- */
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-JYND5P8R18"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-JYND5P8R18');
+            `}
+      </Script>
+      <Component {...pageProps} />{" "}
+    </>
+  );
 }
 
 export default MyApp;

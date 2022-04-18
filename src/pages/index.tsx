@@ -836,9 +836,9 @@ export default function HomePage() {
                 </h2>
               </div>
               <dl className="mt-10 space-y-10 sm:grid sm:grid-cols-3 sm:gap-x-8 sm:gap-y-10 sm:space-y-0 lg:col-span-2 lg:mt-0 lg:pl-6">
-                {communities.map((feature) => (
-                  <a href={feature.link}>
-                    <div key={feature.name} className="cursor-pointer">
+                {communities.map((feature, index) => (
+                  <a href={feature.link} key={index}>
+                    <div className="cursor-pointer">
                       <dt>
                         <div className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-500 bg-gray-600 text-white shadow-lg">
                           <feature.icon
