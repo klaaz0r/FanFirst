@@ -867,7 +867,7 @@ export default function HomePage() {
             <div className="rounded-3xl  bg-gradient-to-r from-green-500 to-green-700 py-10 px-6 sm:py-16 sm:px-12 lg:flex lg:items-center lg:p-20">
               <div className="lg:w-0 lg:flex-1">
                 <h2 className="text-4xl font-extrabold tracking-tight text-black">
-                  Early access and token presale
+                  Come and change the way communities are build
                 </h2>
                 <p className="mt-4 max-w-3xl text-lg text-gray-800">
                   For more information, integrations and access to the token
