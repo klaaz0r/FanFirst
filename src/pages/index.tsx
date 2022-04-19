@@ -225,7 +225,7 @@ const metrics = [
     id: 2,
     stat: "IRL events",
     emphasis: "Tickets",
-    rest: "for your IRL events can be sold and scannend with the app.",
+    rest: "for your IRL events can be sold and scanned with the app.",
   },
   {
     id: 3,
