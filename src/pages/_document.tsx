@@ -14,10 +14,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html
-        lang="en"
-        className="bg-gray-500 bg-gradient-to-r from-gray-800 to-gray-900"
-      >
+      <Html lang="en" className="bg-black">
         <Head>
           <link
             rel="preload"

@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="w-fullrounded-3xl fixed top-0 left-0 right-0 z-10 mx-auto border border-gray-400 bg-gray-500 bg-opacity-80 bg-clip-padding py-1 shadow-xl backdrop-blur-xl backdrop-filter firefox:bg-opacity-90">
+    <header className="fixed  top-0 left-0 right-0 z-10 mx-auto w-full border border-gray-800 bg-black bg-opacity-60 bg-clip-padding py-1 shadow-xl backdrop-blur-xl backdrop-filter firefox:bg-opacity-90">
       <div className=" mx-auto max-w-7xl px-4 sm:px-6  lg:px-8 ">
         <div className="flex h-16 items-center justify-between">
           <div className="flex">

@@ -74,7 +74,7 @@ const navigation = {
 
 export default function Header() {
   return (
-    <footer className="b-top mt-12 border border-gray-400 bg-gray-500">
+    <footer className="b-top mt-12 border border-gray-800 bg-black">
       <div className="mx-auto max-w-7xl overflow-hidden py-3">
         <p className="mt-3 mb-3 text-center text-base text-gray-100">
           &copy; 2022 FanFirst, Inc. All rights reserved.

@@ -259,8 +259,8 @@ export default function HomePage() {
               position: "absolute",
               height: 300,
               width: 400,
-              top: -100,
-              left: -200,
+              top: 150,
+              left: -100,
               opacity: 0.3,
               background: "#32e875",
             }}
@@ -604,10 +604,11 @@ export default function HomePage() {
                     PRIVATE BETA
                   </h2>
                   <h2 className="font-pj max-w-xl bg-gradient-to-br from-green-400 to-green-700 bg-clip-text text-4xl font-extrabold  text-transparent sm:text-5xl  lg:text-6xl">
-                    Community marketplace
+                    Event
+                    <br /> marketplace
                   </h2>
 
-                  <div className="mt-8 flex lg:mt-16 xl:mt-24">
+                  <div className="mt-8 flex lg:mt-16">
                     <div className="w-full lg:w-1/3 xl:w-2/5 xl:py-8">
                       <ul className="space-y-12">
                         <li className="flex items-start">
